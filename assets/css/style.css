@@ -12,6 +12,9 @@
     --text-color-light: #8F8A8A;
     --body-color: #FEFBFB;
     --container-color: #FFF;
+
+    --scroll-bar-color: rgb(224, 218, 218);    
+    --scroll-thumb-color: rgb(197, 195, 195);
   
     /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
@@ -64,6 +67,9 @@
     --text-color: #D1C7C8;
     --body-color: #251D1E;
     --container-color: #302728;
+
+    --scroll-bar-color: #302728;
+    --scroll-thumb-color: #555252;
   }
   
   /*========== Button Dark/Light ==========*/
@@ -146,6 +152,24 @@
     z-index: var(--z-fixed);
     background-color: var(--body-color);
   }
+  
+/*========== SCROLL BAR ==========*/
+::-webkit-scrollbar{
+  width: .60rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--scroll-thumb-color);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: var(--text-color-light);
+}
+
+
   
   /*========== NAV ==========*/
   .nav{
